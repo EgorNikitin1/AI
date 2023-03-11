@@ -40,7 +40,7 @@ for i in range(len(example)):
         if len(temp) == 3:
             print("Третье условие:", sum((s - temp[2]) ** 2))
             if sum((y - temp[1]) ** 2) == 0 and sum((s - temp[2]) ** 2) == 0:
-                print("Образ неинициализирован")
+                print("Образ не инициализирован")
                 break
             del temp[0]
         y = s
