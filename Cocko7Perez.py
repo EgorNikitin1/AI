@@ -46,5 +46,7 @@ while True:
 
     X = temp2
     if sum((temp1 - temp1_old) ** 2) == 0 and count > 1:
-        print("Сеть инициализирована")
+        for j in range(len(x)):
+            if temp2.tolist() == x[j].tolist() and temp1.tolist() == y[j].tolist():
+                print("Образ инициализирован и соответствует эталонному образу", j + 1)
         break
