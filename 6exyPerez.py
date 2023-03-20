@@ -35,14 +35,14 @@ for i in range(len(example)):
         if sum((y - s) ** 2) == 0:
             for j in range(len(x)):
                 if temp[-1].tolist() == x[j].tolist():
-                    print("Образ инициализирован и соответствует эталонному образу", j + 1)
+                    print("Образ идентифицирован и соответствует эталонному образу", j + 1)
             break
         if len(temp) >= 2:
             print("Второе условие:", sum((y - temp[1]) ** 2))
         if len(temp) == 3:
             print("Третье условие:", sum((s - temp[2]) ** 2))
             if sum((y - temp[1]) ** 2) == 0 and sum((s - temp[2]) ** 2) == 0:
-                print("Образ не инициализирован")
+                print("Образ не идентифицирован")
                 break
             del temp[0]
         y = s

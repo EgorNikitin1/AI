@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def chunked(n, lst):
     new = []
     for i in range(len(lst)):
@@ -8,6 +9,7 @@ def chunked(n, lst):
         else:
             new[-1].append(lst[i])
     return new
+
 
 x = np.array([[-2.0],
               [-1.5],

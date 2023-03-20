@@ -24,6 +24,7 @@ print("Матрица весовых коэффициентов:")
 print(w)
 
 for i in range(len(x0)):
+    print("Образ", len(x) + 1 + i)
     X = x0[i]
     count = 0
     while True:
@@ -53,6 +54,6 @@ for i in range(len(x0)):
         if sum((temp1 - temp1_old) ** 2) == 0 and count > 1:
             for j in range(len(x)):
                 if temp2.tolist() == x[j].tolist() and temp1.tolist() == y[j].tolist():
-                    print("Образ инициализирован и соответствует эталонному входному образу", j + 1)
+                    print("Образ идентифицирован и соответствует эталонному входному образу", j + 1)
                     print("Выходной образ", j + 1)
             break
